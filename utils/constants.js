@@ -1,6 +1,6 @@
 const CONSTANTS = {
   API: {
-    BASE_URL: 'https://backend.mydreamuniversity.in',
+    BASE_URL: '',
     ENDPOINTS: {
       STUDENTS: '/api/university-students/'
     }
