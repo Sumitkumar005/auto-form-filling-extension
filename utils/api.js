@@ -1,11 +1,11 @@
 class APIUtils {
   constructor() {
-    this.baseURL = 'https://backend.mydreamuniversity.in';
+    this.baseURL = '';
   }
 
   async fetchStudents(partnerId) {
     try {
-      const url = `${this.baseURL}/api/university-students/?where={"partnerId":"${partnerId}"}`;
+      const url = `${this.baseURL}/a`;
       const response = await fetch(url, {
         method: 'GET',
         headers: { 'Content-Type': 'application/json' }
@@ -21,7 +21,7 @@ class APIUtils {
 
   async fetchStudentById(studentId) {
     try {
-      const url = `${this.baseURL}/api/university-students/${studentId}`;
+      const url = `${this.baseURL}/ap${studentId}`;
       const response = await fetch(url, {
         method: 'GET',
         headers: { 'Content-Type': 'application/json' }
