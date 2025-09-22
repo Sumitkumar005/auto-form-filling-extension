@@ -71,7 +71,7 @@ class BackgroundService {
   }
 
   async fetchStudents(partnerId) {
-    const url = `https://backend.mydreamuniversity.in/api/university-students/?where={"partnerId":"${partnerId}"}`;
+    const url = 
     const response = await fetch(url);
     if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
     const apiResponse = await response.json();
@@ -79,7 +79,7 @@ class BackgroundService {
   }
 
   async fetchStudentById(studentId) {
-    const url = `https://backend.mydreamuniversity.in/api/university-students/${studentId}`;
+    const url = `h
     const response = await fetch(url);
     if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
     const apiResponse = await response.json();
