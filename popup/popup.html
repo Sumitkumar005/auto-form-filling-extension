@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="logo">🎓</div>
+      <h1>ForeignAdmits AI Auto-Fill</h1>
+    </div>
+    <div class="content">
+      <div class="input-group">
+        <label for="partnerId">Partner ID:</label>
+        <input id="partnerId" type="text">
+      </div>
+      <div class="input-group">
+        <label for="studentId">Student ID:</label>
+        <input id="studentId" type="text">
+      </div>
+      <div class="input-group" id="studentSelectGroup" style="display: none;">
+        <label for="studentSelect">Select Student:</label>
+        <select id="studentSelect">
+          <option value="">Select a student...</option>
+        </select>
+      </div>
+      <div class="input-group">
+        <label>Enable AI:</label>
+        <input id="aiEnabled" type="checkbox">
+      </div>
+      <div class="input-group">
+        <label for="openaiApiKey">OpenAI API Key:</label>
+        <input id="openaiApiKey" type="password">
+      </div>
+      <div class="buttons">
+        <button id="fetchStudents" class="btn btn-primary">Fetch All Students</button>
+        <button id="fetchByStudentId" class="btn btn-secondary">Fetch by ID</button>
+      </div>
+      <button id="autoFill" class="btn btn-success" disabled>Auto-Fill Form</button>
+      <div id="studentInfo" class="student-info" style="display: none;">
+        <h3>Student Details</h3>
+        <div id="studentDetails"></div>
+      </div>
+      <div id="status" class="status"></div>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
